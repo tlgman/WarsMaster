@@ -1,0 +1,12 @@
+.vs/*
+Release/*
+Debug/*
+SFMLx32-2.3.2/*
+SFMLx64-2.3.2/*
+x64/*
+WarsMaster/x64/*
+infos.txt
+WarsMaster.VC.db
+WarsMaster.VC.VC.opendb
+
+#Garde le projet (.sln) pour la config

@@ -1,0 +1,7 @@
+{
+	"simple_solidier":{
+		"name": "Soldat",
+		"lives": 30,
+		"arme": "test"
+	}
+}
