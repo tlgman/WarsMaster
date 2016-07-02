@@ -75,6 +75,9 @@
     <ClCompile Include="NeutralEntity.cpp">
       <Filter>Fichiers sources\Entity\General</Filter>
     </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Fichiers sources\Data</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -125,5 +128,12 @@
     <ClInclude Include="NeutralEntity.h">
       <Filter>Fichiers sources\Entity\General</Filter>
     </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Fichiers sources\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

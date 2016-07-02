@@ -9,11 +9,11 @@ class FileManager
 {
     public:
         static FileManager& instance();
-        DataFile getFile(std::string path);
-
+        DataFile& getFile(std::string path);
+		~FileManager();
     private:
         FileManager();
-         ~FileManager();
+        
         FileManager& operator= (const FileManager&) = delete;
         FileManager(const FileManager &) = delete;
 

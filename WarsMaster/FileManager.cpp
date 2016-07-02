@@ -19,7 +19,7 @@ FileManager::~FileManager(){
 }
 
 
-DataFile FileManager::getFile(string path){
+DataFile& FileManager::getFile(string path){
     map<string, DataFile*>::iterator it = mapFiles.find(path);
     // Si le fichier est déjà chargé, on le renvoie
     if(it != mapFiles.end()){

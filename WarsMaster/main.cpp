@@ -4,9 +4,10 @@
 #include "Level.h"
 #include "libs/json.hpp"
 
+
 #include "Soldier.h"
 
-#define DEBUG 1
+//#define DEBUG 1
 
 #define SIZE_GROUND_CASE 32
 #define NB_CASE_HEIGHT 20
@@ -24,6 +25,7 @@ using json = nlohmann::json;
 
 
 int main(){
+
     // TODO !!!!!!!!!!!!!!!!!!! => Enlever !!!!!!!!!!!!!!!!
     json j = "{ \"happy\": true, \"pi\": 3.141 }"_json;
 
