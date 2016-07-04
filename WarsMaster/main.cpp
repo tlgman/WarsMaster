@@ -1,6 +1,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "EntitiesManager.h"
+#include "Player.h"
 #include "Level.h"
 #include "libs/json.hpp"
 
@@ -52,10 +53,10 @@ int main(){
     Level level;
 
 	EntitiesManager etM;
-	Soldier* player = new Soldier({ 10, 10 }, "resources/images/soldier/handgun/move/survivor-move_handgun_0.png");
+	Soldier* sold1 = new Soldier({ 10, 10 }, "resources/images/soldier/handgun/move/survivor-move_handgun_0.png");
+	Player player = Player(static_cast<LivingEntity>(*sold1));
 
-
-	etM.add((Entity*)player);
+	etM.add((Entity*)sold1);
 
 
 
@@ -66,8 +67,12 @@ int main(){
         while(window.pollEvent(event)){
             if(event.type == Event::Closed){
                 window.close();
-            }
-        }
+			}
+			else if (event.type == Event::KeyPressed) {
+				player.move(10, 10);
+			}
+		}
+
         window.clear();
 
 

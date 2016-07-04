@@ -5,14 +5,16 @@
 #include <SFML/Graphics.hpp>
 #include "LivingEntity.h"
 
-class Player : LivingEntity
+class Player
 {
     public:
-        Player(sf::Vector2i position);
-		
+        Player(LivingEntity& entity);
+		bool move(int x, int y);
+		friend LivingEntity;
 
-    private:
-		sf::Sprite sprite;
+	private:
+		LivingEntity* entity;
+		
 };
 
 #endif // PLAYER_H

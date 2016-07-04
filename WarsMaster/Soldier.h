@@ -3,7 +3,7 @@
 
 #include "LivingEntity.h"
 
-class Soldier : LivingEntity
+class Soldier : public LivingEntity
 {
     public:
         Soldier(sf::Vector2i position, std::string texPath);

@@ -2,10 +2,11 @@
 
 using namespace std;
 
-Player::Player(sf::Vector2i position) : LivingEntity(position){
-
+Player::Player(LivingEntity& entity) {
+	this->entity = &entity;
 }
 
-void update(sf::RenderWindow& window) {
-	
+bool Player::move(int x, int y) {
+	return true;
 }
+

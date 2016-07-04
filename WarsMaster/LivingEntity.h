@@ -6,7 +6,7 @@
 class LivingEntity : public InteractEntity
 {
     public:
-        LivingEntity(sf::Vector2i pos = sf::Vector2i(0,0));
+        LivingEntity(sf::Vector2i pos = sf::Vector2i(0,0), std::vector<sf::IntRect> listBoxes = {});
         LivingEntity(sf::Vector2i pos, unsigned int maxLives);
         virtual ~LivingEntity();
 
@@ -17,6 +17,7 @@ class LivingEntity : public InteractEntity
         unsigned int getMaxLives();
 
         void regenerateLives(); // Régénaire les vies de l'entité jusqu'au maximum
+
     protected:
         unsigned int maxLives;
         unsigned int lives;

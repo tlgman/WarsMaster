@@ -1,8 +1,9 @@
 #include "LivingEntity.h"
 
 using namespace sf;
+using namespace std;
 
-LivingEntity::LivingEntity(Vector2i pos) : InteractEntity(pos) {
+LivingEntity::LivingEntity(Vector2i pos, vector<IntRect> listBoxes) : InteractEntity(pos, listBoxes) {
     maxLives = 100;
     lives = maxLives;
 }
